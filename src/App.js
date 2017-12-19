@@ -12,7 +12,7 @@ class App extends Component {
 render() {
   return (
     <div className="App">
-      <div className="App-title">Countdown to {this.date.deadline}</div>
+      <div className="App-title">Countdown to December 25, 2017</div>
       <div>
         <div className="Clock-days">14 Days</div>
         <div className="Clock-hours">30 Hours</div>
