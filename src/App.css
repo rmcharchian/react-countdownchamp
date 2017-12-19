@@ -3,3 +3,8 @@
   font-size: 35px;
   margin-top: 20%;
 }
+
+.Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds{
+  display: inline;
+  margin: 10px;
+}
