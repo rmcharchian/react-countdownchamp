@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.18.2",
+    "install": "^0.10.2",
+    "javascript": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-starter-es6-webpack": "0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
