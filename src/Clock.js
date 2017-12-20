@@ -21,10 +21,12 @@ componentDidMount(){
 }
 
 leading0(num){
-  if (num < 10) {
-    return '0' + num;
-  }
-  return num;
+  //the following works, but it can be done with less code using ternary expression
+  // if (num < 10) {
+  //   return '0' + num;
+  // }
+  // return num;
+  return num < 10 ? '0' + num : num;
 }
 
 
