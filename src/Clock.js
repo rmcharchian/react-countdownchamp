@@ -16,6 +16,11 @@ componentWillMount() {
   this.getTimeUntil(this.props.deadline);
 }
 
+componentDidMount(){
+  setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
+}
+
+
   getTimeUntil(deadline) {
     const time = Date.parse(deadline) - Date.parse(new Date());
     console.log('time', time);
@@ -25,8 +30,8 @@ componentWillMount() {
     const days = Math.floor(time/(1000*60*60*24));
 
     console.log('seconds', seconds, 'minutes', minutes, 'hours', hours, 'days', days);
-    this.setState({days: days, hours: hours, minutes: minutes, seconds: seconds});
-    // THIS WILL CREATE AN INFINITE LOOP
+    this.setState({days, hours, minutes, seconds});
+    // THIS was this.setState({days: days, hours: hours, minutes: minutes, seconds: seconds});
   }
 
   render(){
