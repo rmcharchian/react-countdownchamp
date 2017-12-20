@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-size: 15px;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds{
